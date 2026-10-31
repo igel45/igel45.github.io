@@ -1,5 +1,572 @@
 <!doctype html>
 <html lang="uk">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dutch 10 Min — Нідерландська щодня</title><meta name="description" content="Офіційна сторінка розробника застосунку Dutch 10 Min"></head>
-<body style="font-family:system-ui,sans-serif;max-width:720px;margin:64px auto;padding:0 20px;line-height:1.65"><h1>Dutch 10 Min</h1><p>Нідерландська щодня — застосунок для вивчення нідерландської мови.</p><p><a href="https://play.google.com/store/apps/details?id=io.kodular.orlitsky_andrey.Dutch10Min_PROGRESS_SCREEN_V1">Застосунок у Google Play</a></p><p><a href="https://sites.google.com/view/dutch10min-privacy-policy">Політика конфіденційності</a></p><p>Контакт: <a href="mailto:dutch10min@gmail.com">dutch10min@gmail.com</a></p></body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#173e37">
+<title>Dutch 10 Min — Нідерландська українською</title>
+<meta name="description" content="Вивчай нідерландську з поясненнями українською. Відеоуроки, правила та вправи у Dutch 10 Min для Android.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dutch 10 Min — Нідерландська українською">
+<meta property="og:description" content="Від першого правила — до фраз для щоденного життя. Знайомся із застосунком для Android.">
+<meta property="og:url" content="https://igel45.github.io/">
+<style>
+:root{--paper:#f6f5ef;
+--ink:#173e37;
+--muted:#53675f;
+--line:#d9dfd4;
+--lime:#d9ed96;
+--white:#fff;
+--orange:#e7a66a}
+
+*{box-sizing:border-box}
+.hero>div,.try>div,.start>*,.exercise{min-width:0}
+html{scroll-behavior:smooth;
+scroll-padding-top:90px}
+body{margin:0;
+background:var(--paper);
+color:var(--ink);
+font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+line-height:1.6}
+a{color:inherit}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #c66a28;
+outline-offset:5px}
+button:disabled{cursor:default}
+header,.wrap{width:min(1120px,calc(100% - 64px));
+margin:auto}
+header{display:flex;
+justify-content:space-between;
+align-items:center;
+padding:27px 0;
+border-bottom:1px solid var(--line);
+gap:20px}
+.brand{display:flex;
+align-items:center;
+gap:11px;
+font-weight:800;
+font-size:19px;
+text-decoration:none;
+letter-spacing:-.6px}
+.brandmark{display:grid;
+place-items:center;
+width:38px;
+height:38px;
+background:var(--ink);
+color:var(--lime);
+border-radius:12px;
+font-size:15px;
+letter-spacing:-1px}
+.nav{display:flex;
+align-items:center;
+gap:28px;
+font-size:14px;
+font-weight:600}
+.nav a{text-decoration:none}
+.nav .navcta{border:1px solid var(--ink);
+border-radius:100px;
+padding:8px 17px}
+.hero{display:grid;
+grid-template-columns:1.2fr 1fr;
+gap:72px;
+align-items:center;
+padding:82px 0 78px}
+.eyebrow{display:flex;
+align-items:center;
+gap:9px;
+font-size:12px;
+font-weight:750;
+letter-spacing:1.8px;
+text-transform:uppercase}
+.dot{height:7px;
+width:7px;
+flex:none;
+border-radius:50%;
+background:#86a751}
+h1{font-size:clamp(45px,5.4vw,69px);
+letter-spacing:-3px;
+line-height:1.07;
+margin:24px 0}
+h1 em{font-style:normal;
+color:#6b8655}
+.lead{color:var(--muted);
+font-size:18px;
+max-width:465px;
+margin:0 0 28px}
+.primary{display:inline-flex;
+gap:14px;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+background:var(--ink);
+color:white;
+border:0;
+border-radius:14px;
+padding:15px 23px;
+font-weight:650;
+font-size:15px;
+min-height:54px;
+transition:background .2s,transform .2s}
+.primary:hover{background:#28584b;
+transform:translateY(-2px)}
+.primary svg{height:24px;
+width:24px;
+flex:none}
+.micro{color:var(--muted);
+font-size:12px;
+margin:12px 0 0}
+.herolinks{display:flex;
+align-items:center;
+flex-wrap:wrap;
+gap:20px}
+.textlink{font-size:14px;
+text-underline-offset:5px}
+.visual{position:relative;
+border-radius:28px;
+background:#e5eadc;
+min-height:470px;
+display:grid;
+place-items:center;
+overflow:hidden;
+padding:34px}
+.visual:before{content:"";
+position:absolute;
+width:420px;
+height:420px;
+border-radius:50%;
+border:1px solid #c7d4bc;
+left:-50px;
+top:75px}
+.visual:after{content:"";
+position:absolute;
+width:320px;
+height:320px;
+border-radius:50%;
+border:1px solid #c7d4bc;
+right:-140px;
+top:-100px}
+.lesson{z-index:1;
+background:var(--ink);
+color:white;
+width:100%;
+max-width:318px;
+padding:27px;
+border-radius:22px;
+box-shadow:0 20px 38px #173e371a;
+transform:rotate(-3deg)}
+.lesson-top{display:flex;
+justify-content:space-between;
+align-items:center;
+color:#bfd0c3;
+font-size:11px}
+.lesson-logo{font-weight:800;
+color:var(--lime);
+font-size:15px}
+.progress{height:4px;
+background:#ffffff20;
+border-radius:8px;
+margin:22px 0 25px}
+.progress span{display:block;
+background:var(--lime);
+width:35%;
+height:100%;
+border-radius:8px}
+.lesson .overline{font-size:10px;
+letter-spacing:1.7px;
+color:#b3c7ba;
+text-transform:uppercase}
+.lesson h2{font-size:28px;
+letter-spacing:-.8px;
+line-height:1.2;
+margin:10px 0 22px}
+.phrase{background:#ffffff0c;
+border:1px solid #ffffff20;
+border-radius:13px;
+padding:19px 17px}
+.phrase strong{font-size:25px;
+font-weight:550;
+color:var(--lime);
+display:block;
+letter-spacing:-.5px}
+.phrase p{font-size:14px;
+margin:5px 0 0;
+color:#d9e4dc}
+.lesson-bottom{display:flex;
+flex-wrap:wrap;
+gap:8px;
+justify-content:space-between;
+align-items:center;
+font-size:11px;
+margin-top:24px;
+color:#c2d0c6}
+.lesson-bottom span:last-child{color:var(--ink);
+background:var(--lime);
+padding:7px 12px;
+border-radius:7px;
+font-weight:750}
+.label{position:absolute;
+bottom:19px;
+right:24px;
+color:#576a50;
+font-size:10px;
+letter-spacing:.5px;
+z-index:2}
+.floating{position:absolute;
+right:17px;
+top:38px;
+z-index:2;
+display:flex;
+align-items:center;
+gap:8px;
+background:#fff;
+border:1px solid #dce4d4;
+border-radius:100px;
+padding:10px 15px;
+font-size:11px;
+box-shadow:0 8px 25px #173e3708}
+.floating b{font-size:18px}
+.rule{border-top:1px solid var(--line)}
+.section{padding:66px 0}
+.section-heading{display:flex;
+align-items:flex-end;
+justify-content:space-between;
+gap:30px;
+margin-bottom:34px}
+.section-heading h2,.try h2{font-size:clamp(29px,3.3vw,41px);
+line-height:1.15;
+letter-spacing:-1.5px;
+margin:9px 0 0}
+.section-heading p{max-width:330px;
+font-size:15px;
+color:var(--muted);
+margin:0}
+.features{display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:30px}
+.feature{padding:0 28px 0 0;
+border-right:1px solid var(--line)}
+.feature:last-child{border:0;
+padding-right:0}
+.number{font-size:12px;
+font-weight:700;
+letter-spacing:1px;
+color:#718768;
+display:block;
+margin-bottom:20px}
+.feature h3{font-size:21px;
+letter-spacing:-.5px;
+margin:0 0 9px}
+.feature p{font-size:15px;
+color:var(--muted);
+margin:0}
+.try{background:var(--ink);
+color:white;
+border-radius:24px;
+padding:44px;
+display:grid;
+grid-template-columns:1fr 1.15fr;
+gap:55px;
+align-items:center}
+.try .eyebrow{color:#c1d69b}
+.try p{color:#c2d0c6;
+font-size:15px}
+.exercise{background:#234e43;
+border:1px solid #ffffff24;
+border-radius:16px;
+padding:25px}
+.exercise small{font-size:11px;
+text-transform:uppercase;
+letter-spacing:1.5px;
+color:#c2d0c6}
+.question{font-size:29px;
+letter-spacing:-1px;
+margin:13px 0 3px!important;
+color:white!important}
+.translation{font-size:13px!important;
+margin:0 0 20px;
+color:#c2d0c6}
+.answers{display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:9px}
+.answer{padding:11px 10px;
+border:1px solid #ffffff50;
+border-radius:9px;
+background:transparent;
+color:white;
+cursor:pointer;
+font-weight:650;
+min-height:48px}
+.answer:hover{background:#ffffff12}
+.answer.correct{background:var(--lime);
+color:var(--ink);
+border-color:var(--lime)}
+.answer.wrong{background:#704c3d;
+border-color:#e7a66a}
+.feedback{min-height:55px;
+font-size:13px!important;
+margin:15px 0 0!important}
+.reset{padding:0;
+color:#d8e7cc;
+background:none;
+border:0;
+font-size:12px;
+text-decoration:underline;
+text-underline-offset:4px;
+cursor:pointer;
+min-height:32px}
+.start{display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px}
+.steps{list-style:none;
+margin:0;
+padding:0}
+.steps li{display:flex;
+gap:16px;
+margin-bottom:23px}
+.stepnum{display:grid;
+place-items:center;
+width:31px;
+height:31px;
+flex:none;
+border:1px solid #c6d2bd;
+border-radius:50%;
+font-size:12px}
+.steps strong{font-size:16px}
+.steps p{margin:2px 0 0;
+color:var(--muted);
+font-size:14px}
+.download{background:#e8eddf;
+border-radius:19px;
+padding:31px;
+align-self:start}
+.download h3{font-size:25px;
+letter-spacing:-.8px;
+line-height:1.2;
+margin:0 0 12px}
+.download p{font-size:14px;
+color:var(--muted);
+margin:0 0 22px}
+.download .primary{width:100%}
+.download .micro{margin:10px 0 0;
+font-size:11px}
+.faq{max-width:780px;
+margin:0 auto}
+details{border-top:1px solid var(--line);
+padding:20px 0}
+details:last-child{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;
+font-size:16px;
+font-weight:650;
+list-style:none;
+display:flex;
+justify-content:space-between;
+gap:18px}
+summary::-webkit-details-marker{display:none}
+summary:after{content:"+";
+font-size:22px;
+font-weight:400;
+line-height:1.2}
+details[open] summary:after{content:"−"}
+details p{font-size:14px;
+color:var(--muted);
+margin:14px 0 0;
+max-width:650px}
+footer{border-top:1px solid var(--line);
+padding:29px 0 38px;
+margin-top:60px}
+.foot{display:flex;
+align-items:center;
+justify-content:space-between;
+gap:22px}
+.foot .brand{font-size:16px}
+.footlinks{display:flex;
+gap:20px;
+flex-wrap:wrap;
+font-size:12px;
+color:var(--muted)}
+.footlinks a{text-underline-offset:4px}
+.footnote{font-size:11px;
+color:var(--muted);
+margin:15px 0 0}
+
+@media(max-width:850px){.hero{gap:28px;
+padding:55px 0}
+.nav{gap:15px}
+.visual{min-height:440px;
+padding:28px 20px}
+.floating{top:20px;
+right:12px;
+font-size:10px}
+h1{font-size:52px;
+letter-spacing:-2.3px}
+.try{gap:28px;
+padding:32px}
+.section-heading{align-items:flex-start}
+.features{gap:20px}
+.feature{padding-right:18px}
+.start{gap:28px}
+}
+
+@media(max-width:620px){header,.wrap{width:calc(100% - 40px)}
+header{padding:18px 0}
+.brand{font-size:16px}
+.brandmark{width:33px;
+height:33px;
+border-radius:10px;
+font-size:13px}
+.nav>a:not(.navcta){display:none}
+.nav .navcta{font-size:12px;
+padding:7px 12px}
+.hero{grid-template-columns:1fr;
+gap:34px;
+padding:38px 0 43px}
+.eyebrow{font-size:10px;
+letter-spacing:1.4px}
+h1{font-size:clamp(32px,10.5vw,46px);
+margin:20px 0;
+letter-spacing:-2px;
+max-width:410px}
+.lead{font-size:16px;
+line-height:1.65;
+margin-bottom:24px}
+.herolinks{gap:18px}
+.primary{font-size:14px;
+padding:14px 18px}
+.textlink{font-size:12px}
+.micro{font-size:11px}
+.visual{min-height:405px;
+padding:30px 30px 40px}
+.lesson{max-width:290px;
+padding:24px}
+.lesson h2{font-size:26px}
+.floating{top:20px;
+right:12px}
+.section{padding:43px 0}
+.section-heading{display:block;
+margin-bottom:27px}
+.section-heading h2,.try h2{font-size:32px;
+letter-spacing:-1px}
+.section-heading p{margin-top:17px}
+.features{grid-template-columns:1fr;
+gap:23px}
+.feature{border-right:0;
+border-bottom:1px solid var(--line);
+padding:0 0 23px}
+.number{margin-bottom:7px}
+.feature h3{font-size:21px}
+.feature p{font-size:14px}
+.try{grid-template-columns:1fr;
+padding:27px 21px;
+gap:22px;
+border-radius:20px}
+.try p{margin-bottom:0}
+.exercise{padding:21px}
+.question{font-size:28px}
+.start{grid-template-columns:1fr;
+gap:20px}
+.download{padding:25px}
+footer{margin-top:40px;
+padding-bottom:28px}
+.foot{align-items:flex-start;
+flex-direction:column;
+gap:21px}
+.footlinks{flex-direction:column;
+gap:12px}
+}
+
+@media(max-width:360px){.brand{font-size:14px;
+gap:8px}
+.nav .navcta{font-size:11px;
+padding:7px 10px}
+.primary{font-size:12px;
+padding:13px 12px;
+gap:9px}
+.visual{padding:30px 21px 40px}
+.lesson{padding:20px}
+.lesson-top{font-size:9px}
+.lesson-logo{font-size:13px}
+.floating{font-size:9px;
+padding:8px 10px}
+.eyebrow{font-size:9px;
+letter-spacing:1px}
+}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}
+.primary{transition:none}
+.primary:hover{transform:none}
+}
+
+</style>
+</head>
+<body>
+<header>
+<a class="brand" href="./" aria-label="Dutch 10 Min — головна"><span class="brandmark" aria-hidden="true">D/10</span>Dutch 10 Min</a>
+<nav class="nav" aria-label="Головна навігація"><a href="#learning">Про навчання</a><a href="#practice">Спробувати</a><a class="navcta" href="#download">Завантажити ↗</a></nav>
+</header>
+<main class="wrap">
+<section class="hero" aria-labelledby="hero-title">
+<div>
+<div class="eyebrow"><span class="dot"></span>Нідерландська з українськими поясненнями</div>
+<h1 id="hero-title">Нідерландська.<br>Зрозуміло<br><em>українською.</em></h1>
+<p class="lead">Розбирайся у правилах, дивись відеоуроки та практикуй фрази для щоденного життя — у застосунку Dutch 10 Min.</p>
+<div class="herolinks"><a class="primary" href="https://play.google.com/store/apps/details?id=io.kodular.orlitsky_andrey.Dutch10Min_PROGRESS_SCREEN_V1" data-store><svg viewBox="0 0 24 26" fill="none" aria-hidden="true"><path d="M2 2 15 13 2 24Z" fill="#a8d8be"/><path d="m2 2 16 9-3 2Z" fill="#d9ed96"/><path d="m15 13 3 2-16 9Z" fill="#e7a66a"/><path d="m18 11 4 2-4 2-3-2Z" fill="#fff"/></svg>Завантажити у Google Play</a><a class="textlink" href="#practice">Спробувати вправу ↓</a></div>
+<p class="micro">Для Android · Перехід до офіційної сторінки застосунку</p>
+</div>
+<div class="visual" aria-label="Навчальний приклад: Ik ben thuis означає Я вдома">
+<div class="floating"><b aria-hidden="true">🇺🇦</b> Пояснення рідною мовою</div>
+<div class="lesson">
+<div class="lesson-top"><span class="lesson-logo">Dutch 10 Min</span><span>ПРАВИЛО · ZIJN</span></div>
+<div class="progress" aria-hidden="true"><span></span></div>
+<span class="overline">Фраза на сьогодні</span>
+<h2>Як сказати<br>«Я вдома»?</h2>
+<div class="phrase"><strong>Ik ben thuis.</strong><p>Я вдома.</p></div>
+<div class="lesson-bottom"><span>zijn — дієслово «бути»</span><span>Крок за кроком ↗</span></div>
+</div>
+<span class="label">Ілюстрація навчального прикладу</span>
+</div>
+</section>
+<section class="section rule" id="learning" aria-labelledby="learn-title">
+<div class="section-heading"><div><div class="eyebrow">Менше здогадок. Більше розуміння.</div><h2 id="learn-title">Від правила — до власної фрази.</h2></div><p>Навчайся у своєму темпі та повертайся до тем, які хочеться закріпити.</p></div>
+<div class="features">
+<article class="feature"><span class="number">01 / ЗРОЗУМІЙ</span><h3>Пояснення українською</h3><p>Знайомся з нідерландськими правилами через зрозумілі пояснення та приклади.</p></article>
+<article class="feature"><span class="number">02 / ПОДИВИСЬ</span><h3>Відеоуроки</h3><p>Розбирай навчальні теми з викладачем і слухай, як звучать нідерландські фрази.</p></article>
+<article class="feature"><span class="number">03 / ЗАКРІПИ</span><h3>Практика у вправах</h3><p>Перевіряй розуміння та тренуй використання вивчених слів і правил.</p></article>
+</div>
+</section>
+<section class="section" id="practice" aria-labelledby="try-title">
+<div class="try"><div><div class="eyebrow">Маленький крок просто зараз</div><h2 id="try-title">Одна фраза.<br>Спробуй сам.</h2><p>У нідерландській «я є» — <strong lang="nl">ik ben</strong>. А як завершити фразу «Я вдома»?</p><p style="font-size:11px;color:#b3c7ba">Це окремий приклад на сайті. Більше навчальних матеріалів — у застосунку.</p></div>
+<div class="exercise"><small>Обери пропущене слово</small><p class="question" lang="nl">Ik <span id="blank">___</span> thuis.</p><p class="translation">Я вдома.</p><div class="answers" role="group" aria-label="Варіанти відповіді"><button class="answer" type="button" data-answer="is" lang="nl">is</button><button class="answer" type="button" data-answer="ben" lang="nl">ben</button><button class="answer" type="button" data-answer="zijn" lang="nl">zijn</button></div><p class="feedback" id="feedback" role="status" aria-live="polite">Натисни на один із трьох варіантів.</p><button class="reset" type="button" id="reset">Спробувати ще раз</button></div></div>
+</section>
+<section class="section" id="download" aria-labelledby="start-title">
+<div class="section-heading"><div><div class="eyebrow">Продовжуй у застосунку</div><h2 id="start-title">Почати простіше,<br>ніж здається.</h2></div></div>
+<div class="start"><ol class="steps"><li><span class="stepnum" aria-hidden="true">1</span><div><strong>Відкрий Google Play</strong><p>Перейди на сторінку Dutch 10 Min за кнопкою поруч.</p></div></li><li><span class="stepnum" aria-hidden="true">2</span><div><strong>Установи на Android</strong><p>Переглянь опис застосунку та встанови його на свій пристрій.</p></div></li><li><span class="stepnum" aria-hidden="true">3</span><div><strong>Обери навчальну тему</strong><p>Почни з правила, відеоуроку або вправи, яка цікавить тебе зараз.</p></div></li></ol><div class="download"><h3>Твоя нідерландська<br>починається тут.</h3><p>Знайомся з Dutch 10 Min у Google Play.</p><a class="primary" href="https://play.google.com/store/apps/details?id=io.kodular.orlitsky_andrey.Dutch10Min_PROGRESS_SCREEN_V1" data-store>Завантажити у Google Play <span aria-hidden="true">↗</span></a><p class="micro">Потрібен пристрій Android. Умови доступності — у Google Play.</p></div></div>
+</section>
+<section class="section rule faq" aria-labelledby="faq-title"><div class="section-heading"><h2 id="faq-title">Кілька відповідей перед стартом</h2></div>
+<details><summary>Якою мовою пояснюються теми?</summary><p>Пояснення — українською, а навчальні фрази та приклади — нідерландською.</p></details>
+<details><summary>Чи можна встановити на iPhone?</summary><p>На цій сторінці доступне посилання на Android-версію в Google Play. Посилання на версію для iPhone тут немає.</p></details>
+<details><summary>Де знайти інформацію про конфіденційність?</summary><p>Переглянь <a href="https://sites.google.com/view/dutch10min-privacy-policy">політику конфіденційності</a>. Із запитаннями можна написати на <a href="mailto:dutch10min@gmail.com">dutch10min@gmail.com</a>.</p></details>
+</section>
+</main>
+<footer><div class="wrap"><div class="foot"><a class="brand" href="./"><span class="brandmark" aria-hidden="true">D/10</span>Dutch 10 Min</a><div class="footlinks"><a href="https://sites.google.com/view/dutch10min-privacy-policy">Політика конфіденційності</a><a href="mailto:dutch10min@gmail.com">dutch10min@gmail.com</a></div></div><p class="footnote">Нідерландська з поясненнями українською. Для навчання у власному темпі.</p></div></footer>
+<script>
+(function(){
+const buttons=Array.from(document.querySelectorAll('[data-answer]'));
+const blank=document.getElementById('blank');
+const feedback=document.getElementById('feedback');
+buttons.forEach(function(button){button.addEventListener('click',function(){
+if(button.dataset.answer==='ben'){
+buttons.forEach(function(b){b.classList.remove('wrong');b.disabled=true;});
+button.classList.add('correct');blank.textContent='ben';
+feedback.textContent='Так! Ik ben thuis — Я вдома. З ik вживаємо ben.';
+}else{
+button.classList.add('wrong');button.setAttribute('aria-label',button.dataset.answer+' — спробуй іншу відповідь');
+feedback.textContent='Спробуй ще раз. Підказка: з ik вживаємо ben.';
+}
+});});
+document.getElementById('reset').addEventListener('click',function(){buttons.forEach(function(b){b.classList.remove('correct','wrong');b.disabled=false;b.removeAttribute('aria-label');});blank.textContent='___';feedback.textContent='Натисни на один із трьох варіантів.';});
+})();
+</script>
+</body>
 </html>
+
